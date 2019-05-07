@@ -1,0 +1,148 @@
+@media only screen and (max-width: 1200px) {
+    .services-img-container {
+        width: 40%;
+    }
+
+    .services-list {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    h1 {
+        font-size: 130%;
+        width: 80%;
+    }
+
+    nav {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    nav div {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav div img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .nav-links {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .links-container {
+        height: 5vh
+    }
+
+    .slider-header {
+        transform: translate(-50%, -50%)
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+    .services-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .intro {
+        height: 100%;
+    }
+    .intro p:last-child {
+        width: 90%;
+    }
+
+    .services-img-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .services-img-container img {
+        width: 250px;
+        height: 100%;
+    }
+    .services-list {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .services-list ul{
+        width: 90%;
+        padding: 0;
+    }
+    .services-list ul li h2 {padding-left: 20vw;}
+    .services-list ul li p {padding-left: 20vw}
+
+    .projets-vignette {
+        justify-content: center;
+    }    
+    .vignette-container {
+        width: 40%;
+        margin: 20px;
+        position: relative;
+    }
+    .overlay h3 {
+        font-size: 80%;
+    }
+
+    .contact-form form{
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .slider-header {
+        width :80vw;
+    }
+    .vignette-container {width: 80%}
+    .btn-containers {width: 100vw;
+    justify-content: center;}
+    .btn-containers button {
+        padding: 10px 12px ;
+    }
+    .links-container {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav {
+        width: 100vw;
+    }
+    .links{
+        /* font-size: 50%; */
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    html{
+        min-width: 100%;
+
+    }
+    .btn-containers {width: 100vw;
+        justify-content: center;}
+
+        .btn-containers button {
+            padding: 10px 5px ;
+        }
+        .services-list ul li i {
+            padding: 15px
+        }
+    .slider {
+        background-position: left;
+    }
+
+}
