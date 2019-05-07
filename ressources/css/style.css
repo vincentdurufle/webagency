@@ -47,13 +47,12 @@
     --text-color: rgba(0, 0, 0, 0.753);
 }
 
-html,
-body {
+html{
     margin: 0;
     padding: 0;
-    max-width: 100%;
     width: 100%;
-
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -132,15 +131,14 @@ nav:hover {
 /* ==================== */
 
 .slider {
-    background-image: url("/ressources/img/slider/bg1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 76vh;
-    background-color: var(--main-color);
+    min-width: 100%;
+    background-color: white;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+}
+.slider img {
+    width: 100%;
 }
 .index-top {
     padding-top: 14vh;
@@ -198,7 +196,7 @@ nav:hover {
     transition: 0.5s;
 }
 
-footer::before {
+/* footer::before {
     content: '';
     background-color: var(--main-color);
     padding: 2px;
@@ -227,18 +225,18 @@ footer::before {
     100% {
         width: 98.5vw;
     }
-}
+} */
 
 /* ==================== */
 /* ===== FOOTER ======= */
 /* ==================== */
 .index {
-    min-height: 90vh;
+    /* min-height: 90vh; */
     /* display: none; */
 }
 
 footer {
-    height: 10vh;
+    height: 13vh;
     background-color: white;
 }
 
@@ -248,7 +246,12 @@ footer {
 .services {
     /* display: none; */
 }
-
+.projets {
+    /* display: none; */
+}
+.contact {
+    /* display: none; */
+}
 .intro {
     background-color: white;
     display: -webkit-box;
@@ -296,7 +299,8 @@ footer {
 .services-img-container {
     width: 25vw;
 }
-
+.services-img-container:-ms-fullscreen, :root .ie11up { flex: 1 1 100% }
+.services-list:-ms-fullscreen, :root .ie11up { flex: 1 1 100% }
 .services-list ul {
     list-style: none;
     font-family: 'Roboto', sans-serif;
