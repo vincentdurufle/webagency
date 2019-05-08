@@ -40,19 +40,13 @@
     font-weight: 600;
 }
 
-:root {
-    --main-color: #3491B2;
-    --projets-color: rgb(247, 247, 247);
-    --btn-color: rgb(65, 177, 218);
-    --text-color: rgba(0, 0, 0, 0.753);
-}
-
 html {
     margin: 0;
     padding: 0;
     width: 100%;
     width: 100%;
     overflow-x: hidden;
+    background-color: white;
 }
 
 body {
@@ -65,7 +59,7 @@ body {
 
 
 nav {
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: white;
     height: 14vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -120,7 +114,7 @@ nav:hover {
 
 .links a:hover,
 .links a:active {
-    border-top: 2px solid var(--main-color);
+    border-top: 2px solid #3491B2;
     color: black;
     -webkit-transition: 0.1s;
     -o-transition: 0.1s;
@@ -160,9 +154,34 @@ nav:hover {
     font-size: 150%;
     font-weight: bold;
 }
+.slider .fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130%;
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    border-radius: 100%;
+    padding: 20px 20px 20px 40px;
+}
+.slider .fa-chevron-right{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 130%;
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    border-radius: 100%;
+    padding: 20px 40px 20px 20px;
+}
+.slider i:hover {
+    background-color: black;
+    transition: 0.5s;
+}
 
 .slider-header span {
-    color: var(--main-color);
+    color: #3491B2;
 }
 
 .slider-header p:nth-child(2) {
@@ -172,29 +191,19 @@ nav:hover {
 
 .slider-btn {
     border: none;
-    background-color: var(--btn-color);
-    border-bottom: 2px solid var(--main-color);
+    background-color: rgb(65, 177, 218);
+    border-bottom: 3px solid #3491B2;
     border-radius: 3px;
     padding: 0;
-
-}
-
-.slider-btn a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding: 10px;
-}
-
-.slider-btn a:link,
-.slider-btn a:visited {
-    text-decoration: none;
     color: white;
-    display: block;
 }
 
-.slider-btn a:hover,
-.slider-btn a:active {
-    background-color: var(--btn-color);
+.slider-btn:hover,
+.slider-btn:active {
+    background-color: rgb(65, 177, 218);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -202,7 +211,7 @@ nav:hover {
 
 /* footer::before {
     content: '';
-    background-color: var(--main-color);
+    background-color: #3491B2;
     padding: 2px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -210,36 +219,8 @@ nav:hover {
     -webkit-animation: loader 10s infinite;
             animation: loader 10s infinite;
 }
-
-@-webkit-keyframes loader {
-    0% {
-        width: 0vw;
-    }
-
-    100% {
-        width: 98.5vw;
-    }
-}
-
-@keyframes loader {
-    0% {
-        width: 0vw;
-    }
-
-    100% {
-        width: 98.5vw;
-    }
-} */
-
-/* ==================== */
-/* ===== FOOTER ======= */
-/* ==================== */
-.index {
-    /* min-height: 90vh; */
-    /* display: none; */
-}
-
-footer {
+*/
+.footer {
     height: 13vh;
     background-color: white;
 }
@@ -247,17 +228,6 @@ footer {
 /* ==================== */
 /* ==== SERVICES ====== */
 /* ==================== */
-.services {
-    /* display: none; */
-}
-
-.projets {
-    /* display: none; */
-}
-
-.contact {
-    /* display: none; */
-}
 
 .intro {
     background-color: white;
@@ -288,7 +258,7 @@ footer {
     margin: 10px;
     width: 40%;
     text-align: center;
-    color: var(--text-color);
+    color: rgba(0, 0, 0, 0.753);
 
 }
 
@@ -306,12 +276,22 @@ footer {
 .services-img-container {
     width: 25vw;
 }
+@supports (-webkit-appearance:none) {
+    .services-img-container {
+        flex: 1 1 100%
+    }
+
+    .services-list {
+        flex: 1 1 100%
+    }
+}
 
 @media screen and (-ms-high-contrast: active),
 screen and (-ms-high-contrast: none) {
     .projets {
         height: 100vh;
     }
+
     .services-img-container {
         flex: 1 1 100%
     }
@@ -347,7 +327,7 @@ screen and (-ms-high-contrast: none) {
 
 .services-list ul li i {
     position: absolute;
-    color: var(--main-color);
+    color: #3491B2;
     border-radius: 50px;
     border: 1px solid lightgray;
     padding: 20px;
@@ -355,7 +335,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .services-list ul li .fa-circle {
-    color: var(--main-color);
+    color: #3491B2;
     font-size: 60%;
     border: 1px solid white;
     top: 33%;
@@ -369,7 +349,7 @@ screen and (-ms-high-contrast: none) {
 /* ==================== */
 
 .projets {
-    background-color: var(--projets-color);
+    background-color: rgb(247, 247, 247);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -383,14 +363,14 @@ screen and (-ms-high-contrast: none) {
 }
 
 .projets .intro {
-    background-color: var(--projets-color);
+    background-color: rgb(247, 247, 247);
     width: 100%;
 }
 
 .intro i {
     position: relative;
     top: -28px;
-    color: var(--main-color);
+    color: #3491B2;
     padding: 3px;
     border-radius: 50px;
 }
@@ -402,7 +382,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .projets-line {
-    background-color: var(--projets-color);
+    background-color: rgb(247, 247, 247);
 }
 
 .services-line {
@@ -420,7 +400,7 @@ screen and (-ms-high-contrast: none) {
     font-family: 'Roboto', sans-serif;
     border: none;
     padding: 12px 15px;
-    color: var(--text-color);
+    color: rgba(0, 0, 0, 0.753);
     text-decoration: none;
     cursor: pointer;
 }
@@ -447,15 +427,15 @@ button:focus {
     margin-left: -16px;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid var(--main-color);
+    border-top: 8px solid #3491B2;
     position: relative;
     top: 40px;
     left: calc(50% + 8px);
 }
 
 .btn-containers .btn-active {
-    background-color: var(--btn-color);
-    border-bottom: 3px solid var(--main-color);
+    background-color: rgb(65, 177, 218);
+    border-bottom: 3px solid #3491B2;
     color: white;
 }
 
@@ -519,7 +499,7 @@ button:focus {
 .fa-eye {
     position: relative;
     color: white;
-    background-color: var(--main-color);
+    background-color: #3491B2;
     padding: 10px;
     border-radius: 50px;
     border: 1.5px solid white;
@@ -585,11 +565,11 @@ h4 {
 
 .form-text span {
     font-weight: bold;
-    color: var(--text-color);
+    color: rgba(0, 0, 0, 0.753);
 }
 
 .form-text p {
-    color: var(--text-color);
+    color: rgba(0, 0, 0, 0.753);
     font-weight: 400;
 }
 
@@ -617,9 +597,9 @@ h4 {
     padding: 10px 15px;
     color: white;
     text-decoration: none;
-    background-color: var(--btn-color);
+    background-color: rgb(65, 177, 218);
     border-radius: 3px;
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 3px solid #3491B2;
 }
 
 input:focus,
@@ -634,4 +614,10 @@ textarea:focus {
     height: 100%;
     top: 0;
     left: 0;
+}
+
+.contact-frame {
+    width: 100%;
+    height: 100%;   
+    border: 0;
 }
