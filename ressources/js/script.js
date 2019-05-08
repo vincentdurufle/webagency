@@ -1,29 +1,30 @@
 {
-    function slider() {
-        const slider = document.querySelector('.slider');
-        const [first, second] = [`url("ressources/img/slider/bg1.jpg")`, `url("ressources/img/slider/bg2.jpg")`];
-
-        slider.style.backgroundImage = first;
-        setInterval(() => {
-            if (slider.style.backgroundImage === first) {
-                slider.style.backgroundImage = second;
-            } else {
-                slider.style.backgroundImage = first;
-            }
-        }, 10000);
+    function slider(arrows) {
+        arrows.map(arrow => {
+            arrow.addEventListener('click', function () {
+                console.dir(backgroundImage);
+                if (backgroundImage.src === "http://127.0.0.1:5500/ressources/img/slider/bg1.jpg") {
+                    backgroundImage.src = "http://127.0.0.1:5500/ressources/img/slider/bg2.jpg";
+                } else {
+                    backgroundImage.src = "http://127.0.0.1:5500/ressources/img/slider/bg1.jpg";
+                }
+            })
+        })
     }
 
     function button() {
         const btns = Array.from(document.querySelectorAll('.btn'));
         btns.map(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 document.querySelector('.btn-active').classList.remove('btn-active');
                 this.classList.add('btn-active');
             })
         })
-
     }
 }
 
-// slider();
+const backgroundImage = document.querySelector('.background-image');
+const arrows = Array.from(document.querySelectorAll('.arrow'));
+
+slider(arrows);
 button();

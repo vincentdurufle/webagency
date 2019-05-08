@@ -13,7 +13,9 @@
         font-size: 130%;
         width: 80%;
     }
-
+    .slider i {
+        display: none;
+    }
     nav {
         padding: 0;
         flex-wrap: wrap;
