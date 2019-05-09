@@ -1,3 +1,37 @@
+@media only screen and (min-width: 2560px) {
+
+    .links a:link,
+    .links a:visited {
+        font-size: 200%
+    }
+    .slider-header {
+        font-size: 200%;
+    }
+
+    .intro {
+        font-size: 200%;
+    }
+    .services-img-container img{
+        width: 80%;
+    }
+    .services-list {
+        font-size: 200%;
+    }
+    .btn-containers {
+        font-size: 200%
+    }
+    .overlay {
+        font-size: 150%;
+    }
+    .contact-form form{
+        font-size: 200%;
+        width: 30%;
+        height: 60%;
+    }
+
+    
+}
+
 @media only screen and (max-width: 1200px) {
     .services-img-container {
         width: 40%;
@@ -6,22 +40,27 @@
     .services-list {
         width: 35%;
     }
+
+    .vignette-container {
+        width: calc(33.33% - 40px);
+    }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1024px) {
     h1 {
         font-size: 130%;
         width: 80%;
     }
+
     .slider i {
         display: none;
     }
+
     nav {
         padding: 0;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        
     }
 
     nav div {
@@ -32,6 +71,7 @@
     nav div img {
         width: 50%;
         height: 100%;
+        padding-top: 5px;
     }
 
     .nav-links {
@@ -58,30 +98,33 @@
         transform: none;
         background-color: rgba(0, 0, 0, 0.719);
         font-size: 120%;
-        /* border: 2px solid goldenrod; */
-        padding: 50px 0 ;
+        padding: 50px 0;
     }
 
-    .slider{   
-        /* border: 2px solid blue; */
+    .slider {
         display: flex;
         flex-direction: column;
     }
+
     .slider img {
-    display: none;        
+        display: none;
     }
+
     .services {
         display: flex;
         flex-direction: column;
     }
+
     .services-bottom {
         display: flex;
         flex-wrap: wrap;
         height: 100%;
     }
+
     .intro {
         height: 100%;
     }
+
     .intro p:last-child {
         width: 90%;
     }
@@ -92,10 +135,12 @@
         justify-content: center;
         margin: 10px;
     }
+
     .services-img-container img {
         width: 250px;
         height: 100%;
     }
+
     .services-list {
         width: 100%;
         align-items: center;
@@ -103,69 +148,91 @@
         justify-content: center;
     }
 
-    .services-list ul{
+    .services-list ul {
         width: 90%;
         padding: 0;
     }
-    .services-list ul li h2 {padding-left: 20vw;}
-    .services-list ul li p {padding-left: 20vw}
+
+    .services-list ul li h2 {
+        padding-left: 20vw;
+    }
+
+    .services-list ul li p {
+        padding-left: 20vw
+    }
 
     .projets-vignette {
         justify-content: center;
-    }    
+    }
+
     .vignette-container {
         width: 40%;
         margin: 20px;
         position: relative;
     }
+
     .overlay h3 {
         font-size: 80%;
     }
 
-    .contact-form form{
+    .contact-form form {
         left: 50%;
     }
 }
 
 @media only screen and (max-width: 450px) {
     .slider-header {
-        width :100vw;
+        width: 100vw;
     }
 
-    .vignette-container {width: 80%}
-    .btn-containers {width: 100vw;
-    justify-content: center;}
-    .btn-containers button {
-        padding: 10px 12px ;
+    .vignette-container {
+        width: 80%
     }
+
+    .btn-containers {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .btn-containers button {
+        padding: 10px 12px;
+    }
+
     .links-container {
         width: 100%;
         padding: 0;
         display: flex;
         justify-content: space-around;
     }
+
     nav {
         width: 100vw;
     }
-    .links{
+
+    .links {
         margin: 0;
     }
 }
 
 @media only screen and (min-width: 320px) {
-    html{
+    html {
         min-width: 100%;
 
     }
-    .btn-containers {width: 100vw;
-        justify-content: center;}
 
-        .btn-containers button {
-            padding: 10px 5px ;
-        }
-        .services-list ul li i {
-            padding: 15px
-        }
+    .btn-containers {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .btn-containers button {
+        padding: 10px 5px;
+    }
+
+    .services-list ul li i {
+        padding: 15px
+    }
+
     .slider {
         background-position: left;
     }
