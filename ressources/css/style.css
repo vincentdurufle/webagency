@@ -210,17 +210,6 @@ nav:hover {
     transition: 0.5s;
 }
 
-/* footer::before {
-    content: '';
-    background-color: #3491B2;
-    padding: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-animation: loader 10s infinite;
-            animation: loader 10s infinite;
-}
-*/
 .footer {
     height: 13vh;
     background-color: white;

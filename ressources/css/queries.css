@@ -51,6 +51,9 @@
         font-size: 130%;
         width: 80%;
     }
+    .contact-frame {
+        display: none;
+    }
 
     .slider i {
         display: none;
@@ -180,7 +183,7 @@
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 414px) {
     .slider-header {
         width: 100vw;
     }
