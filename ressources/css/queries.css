@@ -4,6 +4,7 @@
     .links a:visited {
         font-size: 200%
     }
+
     .slider-header {
         font-size: 200%;
     }
@@ -11,25 +12,28 @@
     .intro {
         font-size: 200%;
     }
-    .services-img-container img{
+
+    .services-img-container img {
         width: 80%;
     }
+
     .services-list {
         font-size: 200%;
     }
+
     .btn-containers {
         font-size: 200%
     }
+
     .overlay {
         font-size: 150%;
     }
-    .contact-form form{
+
+    .contact-form form {
         font-size: 200%;
         width: 30%;
         height: 60%;
     }
-
-    
 }
 
 @media only screen and (max-width: 1200px) {
@@ -51,6 +55,7 @@
         font-size: 130%;
         width: 80%;
     }
+
     .contact-frame {
         display: none;
     }
@@ -183,7 +188,7 @@
     }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 425px) {
     .slider-header {
         width: 100vw;
     }
@@ -239,5 +244,4 @@
     .slider {
         background-position: left;
     }
-
 }
