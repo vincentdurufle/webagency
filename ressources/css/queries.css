@@ -1,5 +1,4 @@
 @media only screen and (min-width: 2560px) {
-
     .links a:link,
     .links a:visited {
         font-size: 200%
@@ -225,7 +224,6 @@
 @media only screen and (min-width: 320px) {
     html {
         min-width: 100%;
-
     }
 
     .btn-containers {
